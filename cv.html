@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV | Jenny Rhee</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+
+  <style>
+    .cv-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+
+    .cv-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .cv-title {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .cv-actions a {
+      font-size: 14px;
+      text-decoration: none;
+      color: #3F6476;
+      margin-left: 14px;
+    }
+
+    .cv-actions a:hover {
+      text-decoration: underline;
+    }
+
+    .cv-viewer {
+      border: 1px solid #E7E9E4;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      background: white;
+    }
+
+    .cv-frame {
+      width: 100%;
+      height: 85vh;
+      border: none;
+    }
+  </style>
+
+
+  <script>
+    function trackEvent(action, label) {
+      if (typeof gtag === "function") {
+        gtag("event", action, {
+          event_category: "CV",
+          event_label: label
+        });
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const openLink = document.getElementById("cv-open");
+      const downloadLink = document.getElementById("cv-download");
+
+      if (openLink) {
+        openLink.addEventListener("click", function () {
+          trackEvent("click_open_cv", "Open PDF");
+        });
+      }
+
+      if (downloadLink) {
+        downloadLink.addEventListener("click", function () {
+          trackEvent("click_download_cv", "Download PDF");
+        });
+      }
+    });
+  </script>
+
+
+
+
+
+
+
+</head>
+
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Jenny (Kyuyeon) Rhee</a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#research">Research</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="cv-container">
+    <div class="cv-header">
+      <div class="cv-title">Curriculum Vitae</div>
+      <div class="cv-actions">
+        <a href="Rhee_CV.pdf" target="_blank">Open</a>
+        <a href="Rhee_CV.pdf" download>Download</a>
+      </div>
+    </div>
+
+    <div class="cv-viewer">
+      <iframe src="Rhee_CV.pdf" class="cv-frame"></iframe>
+    </div>
+  </main>
+</body>
+</html>
