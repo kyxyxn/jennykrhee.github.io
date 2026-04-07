@@ -141,7 +141,18 @@ section:first-of-type {
 }
 
 .bio {
-  margin-top: 15px;
+  margin-top: 18px;
+  line-height: 1.75;
+}
+
+.bio + .bio {
+  margin-top: 14px;
+}
+
+.contact-note {
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--color-text-muted);
   line-height: 1.6;
 }
 
