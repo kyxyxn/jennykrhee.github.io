@@ -115,11 +115,12 @@ section:first-of-type {
 }
 
 .home-photo {
+  margin-top: 24px
   flex: 0 0 180px;
 }
 
 .home-photo img {
-  width: 190px;
+  width: 170px;
   display: block;
   border-radius: 8px;
 }
