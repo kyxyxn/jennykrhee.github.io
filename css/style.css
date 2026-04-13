@@ -36,7 +36,6 @@ body {
   width: min(740px, calc(100% - 48px));
   margin: 0 auto;
   padding: 60px 24px;
-  outline: 5px solid red !important;
 }
 
 
@@ -100,9 +99,6 @@ nav {
   color: var(--color-accent);
 }
 
-.body {
-  background: pink !important;
-}
 
 section {
   margin-top: 80px;
