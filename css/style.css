@@ -117,7 +117,7 @@ section:first-of-type {
 
 .home-photo {
   flex: 0 0 160px;
-  transform: translateY(40px);
+  transform: translateY(20px);
 }
 
 .home-photo img {
