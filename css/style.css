@@ -121,8 +121,10 @@ section:first-of-type {
 }
 
 .home-photo img {
-  width: 160px;
+  width: 180px;
   display: block;
+  border-radius: 16px;
+  box-shadow: 0 7px 18px rgba(0,0,0,0.07);
 }
 
 .home-info {
