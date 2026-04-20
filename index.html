@@ -147,7 +147,7 @@
 	  </article>
 
 	  <article 
-	    class="project-card"
+	    class="project-card disabled"
 	    tabindex="0"
 	    role="button"
 	    data-topline="Work In Progress"
@@ -225,7 +225,7 @@
     modal.setAttribute("aria-hidden", "true");
   }
 
-  document.querySelectorAll(".project-card").forEach((card) => {
+  document.querySelectorAll(".project-card:not(.disabled)").forEach((card) => {
     card.addEventListener("click", () => openModal(card));
     card.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") {
