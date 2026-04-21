@@ -185,13 +185,15 @@ h1, h2, h3 {
 .contact-links {
   margin-top: 18px;
   display: flex;
-  gap: 15px;
+  gap: 18px;
 }
 .contact-links a {
   text-decoration: none;
   color: var(--color-accent);
   font-weight: 500;
+  transition: color 0.2s ease, opacity 0.2s ease;
 }
+
 .contact-links a:hover {
   color: var(--color-accent-strong);
   text-decoration: underline;
@@ -489,11 +491,11 @@ footer a:hover {
 
 .modal-content .project-topline {
   font-size: 11px;
-  letter-spacing: 0.10em;
-  color: var(--color-text-subtle);
-  margin-bottom: 8px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent-strong);
+  margin-bottom: 10px;
 }
-
 .modal-content h3 {
   margin: 0 0 10px 0;
   font-size: 22px;
